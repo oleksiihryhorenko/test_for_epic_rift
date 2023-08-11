@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ca19294c13433546aa4b598693fd7b7, type: 3}
+  m_Name: heal 100 points
+  m_EditorClassIdentifier: 
+  Id: heal_100_points
+  Title: Heal 100 points
+  Spendables:
+  - rid: 3712207700044021761
+  Rewards:
+  - rid: 3712207701020770304
+  references:
+    version: 2
+    RefIds:
+    - rid: 3712207700044021761
+      type: {class: SpendGold, ns: Model.Gold, asm: gold}
+      data:
+        count: 70
+    - rid: 3712207701020770304
+      type: {class: RewardHealth, ns: Health, asm: health}
+      data:
+        count: 100
